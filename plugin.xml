@@ -1,0 +1,20 @@
+<library path="src">
+  <class name="Drone CamConfig Plugin" type="rqt_drone.image.config" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      Display image and configuration options.
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>Drone Plugin</label>
+      <icon type="theme">system-help</icon>
+      <statustip>CamConfig Plugin.</statustip>
+    </qtgui>
+  </class>
+</library>
