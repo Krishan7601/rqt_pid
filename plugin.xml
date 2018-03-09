@@ -4,7 +4,7 @@
 		Tuning of altitude and attitude PID controls
     </description>
     <qtgui>
-      <label>Drone Plugin</label>
+      <label>Drone - PID Tuner</label>
       <icon type="theme">system-help</icon>
       <statustip>PID Tuning Plugin.</statustip>
     </qtgui>
