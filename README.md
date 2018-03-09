@@ -1,2 +1,2 @@
-# rqt_drone_gui
-GUI for testing, and configuring a drone remotely using ROS
+# rqt_pid
+GUI for tuning altitude and attitude PID controls in realtime.

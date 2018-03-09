@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(rqt_drone)
+project(rqt_pid)
 find_package(catkin REQUIRED)
 catkin_package()
 catkin_python_setup()
@@ -25,7 +25,7 @@ include_directories(
 )
 
 install(PROGRAMS
-	scripts/rqt_drone
+	scripts/rqt_pid
 	DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
  

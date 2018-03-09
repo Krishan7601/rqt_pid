@@ -1,12 +1,12 @@
 <library path="src">
-  <class name="Drone CamConfig Plugin" type="rqt_drone.camConfig.CamConfig" base_class_type="rqt_gui_py::Plugin">
+  <class name="Drone PID Tuning Plugin" type="rqt_pid.pid.PID" base_class_type="rqt_gui_py::Plugin">
     <description>
-      Display image and configuration options.
+		Tuning of altitude and attitude PID controls
     </description>
     <qtgui>
       <label>Drone Plugin</label>
       <icon type="theme">system-help</icon>
-      <statustip>CamConfig Plugin.</statustip>
+      <statustip>PID Tuning Plugin.</statustip>
     </qtgui>
   </class>
 </library>

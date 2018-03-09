@@ -6,10 +6,10 @@ from qt_gui.plugin import Plugin
 from python_qt_binding import loadUi
 from python_qt_binding.QtWidgets import QWidget
 
-class CamConfig(Plugin):
+class PID(Plugin):
 
     def __init__(self, context):
-        super(CamConfig, self).__init__(context)
+        super(PID, self).__init__(context)
         # Give QObjects reasonable names
         self.setObjectName('CamConfig')
 
@@ -22,17 +22,16 @@ class CamConfig(Plugin):
                       help="Put plugin in silent mode")
         args, unknowns = parser.parse_known_args(context.argv())
         if not args.quiet:
-            print 'arguments: ', args
-            print 'unknowns: ', unknowns
+            print 'Running rqt_pid
 
         # Create QWidget
         self._widget = QWidget()
         # Get path to UI file which should be in the "resource" folder of this package
-        ui_file = os.path.join(rospkg.RosPack().get_path('rqt_drone'), 'resource', 'CamConfig.ui')
+        ui_file = os.path.join(rospkg.RosPack().get_path('rqt_drone'), 'resource', 'pid.ui')
         # Extend the widget with all attributes and children from UI file
-        loadUi('/home/krishan/catkin_ws/src/rqt_drone/resource/CamConfig.ui', self._widget, {'CamConfigView' : 'CamConfigView'})
+        loadUi('/home/krishan/catkin_ws/src/rqt_drone/resource/pid.ui', self._widget, {'PIDView' : 'PIDView'})
         # Give QObjects reasonable names
-        self._widget.setObjectName('CamConfigUI')
+        self._widget.setObjectName('PID_UI')
         # Show _widget.windowTitle on left-top of each plugin (when 
         # it's set in _widget). This is useful when you open multiple 
         # plugins at once. Also if you open multiple instances of your 

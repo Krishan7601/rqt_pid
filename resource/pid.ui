@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PID_Widget</class>
+ <widget class="QWidget" name="PID_Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>519</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>rqt_drone</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>30</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>30</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item row="9" column="0">
+      <widget class="QLabel" name="yaw_label">
+       <property name="text">
+        <string>Attitude: Yaw</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="alt_i_txt"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="alt_label">
+       <property name="text">
+        <string>Altitude</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="pitch_label">
+       <property name="text">
+        <string>Attitude: Pitch</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="p_label">
+       <property name="text">
+        <string>P</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="roll_label">
+       <property name="text">
+        <string>Attitude: Roll</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSlider" name="alt_p_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QSlider" name="alt_i_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QSlider" name="alt_d_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QSlider" name="roll_p_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="d_label">
+       <property name="text">
+        <string>D</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="empty_label">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLineEdit" name="alt_d_txt"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="i_label">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>I</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QSlider" name="roll_i_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QSlider" name="roll_d_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QSlider" name="pitch_p_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QSlider" name="pitch_d_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QSlider" name="pitch_i_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QSlider" name="yaw_d_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QSlider" name="yaw_i_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QSlider" name="yaw_p_slider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="alt_p_txt"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="roll_p_txt"/>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLineEdit" name="roll_d_txt"/>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLineEdit" name="roll_i_txt"/>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="pitch_i_txt"/>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="pitch_p_txt"/>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLineEdit" name="pitch_d_txt"/>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="yaw_p_txt"/>
+     </item>
+     <item row="10" column="2">
+      <widget class="QLineEdit" name="yaw_i_txt"/>
+     </item>
+     <item row="10" column="3">
+      <widget class="QLineEdit" name="yaw_d_txt"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
