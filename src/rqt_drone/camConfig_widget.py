@@ -50,7 +50,7 @@ Handles all widget callbacks and contains the instance of BagTimeline for storin
 	self.zoom_in_button.setIcon(QIcon.fromTheme('zoom-in'))
 	self.zoom_out_button.setIcon(QIcon.fromTheme('zoom-out'))
 	self.zoom_all_button.setIcon(QIcon.fromTheme('zoom-original'))
-	self.thumbs_button.setIcon(QIcon.fromTheme('insert-image'))
+	#self.thumbs_button.setIcon(QIcon.fromTheme('insert-image'))
 	self.record_button.setIcon(QIcon.fromTheme('media-record'))
 	self.load_button.setIcon(QIcon.fromTheme('document-open'))
 	self.save_button.setIcon(QIcon.fromTheme('document-save'))
